@@ -1,0 +1,15 @@
+https://github.com/firebase/quickstart-js/tree/master/messaging#curl
+
+
+--------------------------------------------------------------------------------------------------
+curl -X POST -H "Authorization: key=AAAAVfFWkSs:APA91bGcLb0vF--9Dexlfk5exf_6g1irkURLuBnUyBUgTeAhF_uFVPcsKOQKBk0SBw0nbDjdvHnM9EBwGJzeFq-8Gc1snpB_5zY_PoLfJCe-f-FBBtZd7OYY7BkpMLkNdjlK8o5KP8By
+" -H "Content-Type: application/json" -d '{
+  "notification": {
+    "title": "Portugal vs. Denmark",
+    "body": "5 to 1",
+    "icon": "firebase-logo.png",
+    "click_action": "http://localhost:8081"
+  },
+  "to": "YOUR-IID-TOKEN"
+}' "https://fcm.googleapis.com/fcm/send"
+--------------------------------------------------------------------------------------------------
